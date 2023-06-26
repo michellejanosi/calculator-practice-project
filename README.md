@@ -4,6 +4,8 @@ Welcome to the repository for the Calculator App! This simple yet effective calc
 
 This project was created as part of the practice assignments for the Coding Dojo coding bootcamp. 🎓
 
+![Calculator Preview](/images/calculator-preview.png)
+
 ## Table of Contents 📘
 - [Description](#description)
 - [Technologies Used](#technologies-used)
