@@ -1,0 +1,95 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color and font-family for the body */
+body {
+  background-color: #f3f4f6;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styles for the calculator container */
+#calculator {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Styles for the display screen */
+#display {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: right;
+  min-height: 60px;
+}
+
+/* Styles for the rows */
+.row {
+  display: flex;
+}
+
+/* Basic styles for the buttons */
+button {
+  flex: 1;
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Different color for operator buttons */
+.operator {
+  background-color: #f9a109;
+  color: #ffffff;
+}
+
+/* Special style for the equals button */
+#equals {
+  background-color: #2ecc71;
+  color: #ffffff;
+  flex: 4;
+}
+
+/* Hover styles for buttons */
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.operator:hover, #equals:hover {
+  filter: brightness(90%);
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 480px) {
+  #calculator {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100vh;
+  }
+
+  #display {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+}
