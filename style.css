@@ -32,7 +32,7 @@ body {
   color: #ffffff;
   padding: 20px;
   font-size: 2em;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-bottom: 10px;
   text-align: right;
   min-height: 60px;
@@ -46,12 +46,33 @@ body {
 /* Basic styles for the buttons */
 button {
   flex: 1;
+  border-radius: 5px;
   padding: 20px;
+  margin: 3px;
   font-size: 1.5em;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+/* Style the button in its active state */
+button:active {
+  background-color: #d58512;
+  transform: translateY(4px);
+}
+
+/* Style the operator button in its active state */
+.operator:active {
+  background-color: #d58512;
+  transform: translateY(4px);
+}
+
+/* Style the equals button in its active state */
+#equals:active {
+  background-color: #27ae60;
+  transform: translateY(4px);
+}
+
 
 /* Different color for operator buttons */
 .operator {
@@ -69,6 +90,10 @@ button {
 /* Hover styles for buttons */
 button:hover {
   background-color: #f0f0f0;
+}
+
+.operator:hover {
+  background-color: #d58512;
 }
 
 .operator:hover, #equals:hover {
